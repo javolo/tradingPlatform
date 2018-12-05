@@ -86,6 +86,7 @@ public class TradeServiceImpl implements TradeService {
 				// I´ll update the details of the order that now it´s matched
 				ord.setMatched(true);
 				ord.setMatchedOrderID(order.getOrderId());
+				matchedOrderList.add(ord);
 				
 				return ord.getOrderId();
 			}
